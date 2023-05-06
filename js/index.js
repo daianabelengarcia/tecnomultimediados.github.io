@@ -1,11 +1,7 @@
-let b;
-
 function setup() {
-    createCanvas(400, 400);
-    b = new classBlancos();
+    createCanvas(height, height);
   }
   
   function draw() {
-    background(255);
-b.dibujar();
+    background(220);
   }
