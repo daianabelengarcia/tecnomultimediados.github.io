@@ -8,5 +8,5 @@ function draw() {
   background(255);
 }
 function mouseMoved() {
-  obra.dibujar();
+  obra.dibujar(mouseX, mouseY);
 }

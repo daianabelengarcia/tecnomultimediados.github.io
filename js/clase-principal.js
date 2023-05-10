@@ -21,8 +21,8 @@ class Principal {
     }
     cuadrados = new Cuadrados();
   }
-  dibujar() {
-    diryvel.calcular(mouseX, mouseY);
+  dibujar(posX, posY) {
+    diryvel.calcular(posX, posY);
 
     if (diryvel.direcciony() <= 0) {
       console.log("Estoy subiendo");
