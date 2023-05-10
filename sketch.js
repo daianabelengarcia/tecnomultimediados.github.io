@@ -5,7 +5,7 @@ function setup() {
   obra = new Principal ();
 }
 function draw() {
-  background(255);
+  
 }
 function mouseMoved() {
   obra.dibujar(mouseX, mouseY);

@@ -24,17 +24,19 @@ class Principal {
   dibujar(posX, posY) {
     diryvel.calcular(posX, posY);
 
+    console.log(diryvel.direcciony());
+
     if (diryvel.direcciony() <= 0) {
       console.log("Estoy subiendo");
     } else if (diryvel.direcciony() >= 0) {
         console.log ("Estoy bajando");
     }
 
-    if (diryvel.direcciony() <= -2) {
+    if (diryvel.direcciony() <= -5) {
       for (let i = 0; i < 20; i++) {
         m[i].primeracapa();
         m[i].mover();
-      } } else if (diryvel.direcciony() >= 2) {
+      } } else if (diryvel.direcciony() >= 5) {
       for (let i = 0; i < 20; i++) {
         m[i].segundacapa();
         m[i].mover();
