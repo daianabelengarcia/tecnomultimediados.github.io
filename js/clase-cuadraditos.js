@@ -8,15 +8,20 @@ class Cuadrados {
   dibujar() {
     noStroke();
     fill(255);
-    for (this.posx = 0; this.posx < 30; this.posx++) {
-      for (let posy = 0; posy < 20; posy++) {
-        rect(10 + this.posx * 20, 10 + posy * 30, this.tamx, this.tamy);
+    let candtidadDeColumnas = mouseY/20;
+    let cantidadDeFilas = 200;
+    let movimiento = frameCount % 20;
+
+    for(let i = 0; i<candtidadDeColumnas; i+=1){ //dibuja filas y columnas
+      for(let e= 0; e<cantidadDeFilas; e+=2){ 
+        let posX= i*20 + movimiento; // movieminto en x 
+        let posY= e*20;
+        rect(posX, posY, 10, 20);
       }
     }
-  }
-  mover (posx){
-    if (mouseX < width && mouseX > 0 && mouseY < height && mouseY > 0) {
-        this.posx ++;
-    }
+    if(mouseX<= 200){ // Condicion de ubicaion del mouse que controla el movimiento
+      movimiento=0;
+      }
+
   }
 }
