@@ -11,6 +11,10 @@ class Cuadrados {
     let candtidadDeColumnas = mouseY/20;
     let cantidadDeFilas = 200;
     let movimiento = frameCount % 20;
+    
+     if(mouseX<= 200){ // Condicion de ubicaion del mouse que controla el movimiento
+      movimiento=0;
+      }
 
     for(let i = 0; i<candtidadDeColumnas; i+=1){ //dibuja filas y columnas
       for(let e= 0; e<cantidadDeFilas; e+=2){ 
@@ -19,9 +23,7 @@ class Cuadrados {
         rect(posX, posY, 10, 20);
       }
     }
-    if(mouseX<= 200){ // Condicion de ubicaion del mouse que controla el movimiento
-      movimiento=0;
-      }
+   
 
 
   }
