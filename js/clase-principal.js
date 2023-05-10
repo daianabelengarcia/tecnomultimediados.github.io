@@ -29,12 +29,20 @@ class Principal {
     } else if (diryvel.direcciony() >= 0) {
         console.log ("Estoy bajando");
     }
-    for (let i = 0; i < 20; i++) {
-      m[i].primeracapa();
-      m[i].mover();
-    }
 
-    if (m[0].posy >= 0) {
+    if (diryvel.direcciony() <= -5) {
+      for (let i = 0; i < 20; i++) {
+        m[i].primeracapa();
+        m[i].mover();
+      } } else if (diryvel.direcciony() >= 5) {
+      for (let i = 0; i < 20; i++) {
+        m[i].segundacapa();
+        m[i].mover();
+      }
+    }
+    
+
+    /*if (m[0].posy >= 0) {
       for (let i = 0; i < 20; i++) {
         m2[i].primeracapa();
         m2[i].mover();
@@ -60,6 +68,6 @@ class Principal {
     }
     if (m4[0].posy >= 0) {
       cuadrados.dibujar();
-    }
+    }*/
   }
 }

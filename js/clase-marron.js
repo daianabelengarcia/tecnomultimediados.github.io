@@ -15,6 +15,12 @@ class Marron {
       fill(10, this.brillo, this.saturacion);
       rect(this.posx, this.posy, this.tamx, this.tamy);
   }
+  segundacapa() {
+    noStroke();
+    colorMode(HSB);
+    fill (30,this.brillo, this.saturacion);
+    rect(this.posx, this.posy, this.tamx, this.tamy);
+  }
   mover () {
     if (this.posy <= 0) {
       this.posy += 10;

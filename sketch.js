@@ -6,5 +6,7 @@ function setup() {
 }
 function draw() {
   background(255);
+}
+function mouseMoved() {
   obra.dibujar();
 }
