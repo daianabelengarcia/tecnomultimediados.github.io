@@ -23,5 +23,6 @@ class Cuadrados {
       movimiento=0;
       }
 
+
   }
 }
