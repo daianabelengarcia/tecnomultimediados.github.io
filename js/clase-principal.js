@@ -30,11 +30,11 @@ class Principal {
         console.log ("Estoy bajando");
     }
 
-    if (diryvel.direcciony() <= -5) {
+    if (diryvel.direcciony() <= -2) {
       for (let i = 0; i < 20; i++) {
         m[i].primeracapa();
         m[i].mover();
-      } } else if (diryvel.direcciony() >= 5) {
+      } } else if (diryvel.direcciony() >= 2) {
       for (let i = 0; i < 20; i++) {
         m[i].segundacapa();
         m[i].mover();
