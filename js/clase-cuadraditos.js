@@ -11,8 +11,8 @@ class Cuadrados {
     let candtidadDeColumnas = mouseY/20;
     let cantidadDeFilas = 200;
     let movimiento = frameCount % 20;
-
-    if(mouseX<= 200){ // Condicion de ubicaion del mouse que controla el movimiento
+    
+     if(mouseX<= 200){ // Condicion de ubicaion del mouse que controla el movimiento
       movimiento=0;
       }
 
@@ -23,6 +23,7 @@ class Cuadrados {
         rect(posX, posY, 10, 20);
       }
     }
+   
 
 
   }
