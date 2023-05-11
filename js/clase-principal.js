@@ -30,90 +30,72 @@ class Principal {
     console.log(capa);
     
    for (let i = 0; i < 20; i++) {
-      if (diryvel.direcciony() >= 5) {
+      if (diryvel.direcciony() >= 1) {
         m[i].marron1();
-      } else if (diryvel.direcciony() <= -5) {
-        m[i].marron2();
-      } else if (diryvel.direcciony() <= 5 && diryvel.direcciony() >= -5) {
         m[i].mover();
-      }
+      } else if (diryvel.direcciony() <= -1) {
+        m[i].marron2();
+        m[i].mover();
+      } 
     }
     if (m[0].posy >= 0) {
       capa = 1;
     }
     if (capa == 1) {
       for (let i = 0; i < 20; i++) {
-      if (diryvel.direcciony() >= 0) {
+      if (diryvel.direcciony() >= 1) {
         m2[i].marron1();
         m2[i].mover();
-      } else if (diryvel.direcciony() <= 5) {
+      } else if (diryvel.direcciony() <= -1) {
         m2[i].marron2();
         m2[i].mover();
       }
     }
   }
-    if (m[0].posy >= 0) {
-      capa = 2;
-    }
-  
-      
-
-    /*if (capa == 1 && m[0].posy >= -1) {
-      if (diryvel.direccionx() <= -10) {
-        for (let i = 0; i < 20; i++) {
-          m2[i].marron1();
-        }
-      } else if (diryvel.direccionx() >= 1) {
-        for (let i = 0; i < 20; i++) {
-          m2[i].marron2();
-        }
-      }
-      if (diryvel.direcciony() <= 0) {
-        for (let i = 0; i < 20; i++) {
-          m2[i].mover();
-        }
-      }
-      capa = 2;
-    } else if (capa == 2 && m2[0].posy >= -1) {
-      if (diryvel.direccionx() <= -10) {
-        for (let i = 0; i < 30; i++) {
-          c[i].dibujar();
-        }
-      } 
-      if (diryvel.direcciony() <= 1) {
-        for (let i = 0; i < 30; i++) {
-          c[i].mover();
-        }
-      }
-      capa = 3;
-    }*/
-
-    /*if (m[0].posy >= 0) {
-      for (let i = 0; i < 20; i++) {
-        m2[i].primeracapa();
-        m2[i].mover();
-      }
-    }
     if (m2[0].posy >= 0) {
-      for (let i = 0; i < 30; i++) {
-        c[i].dibujar();
-        c[i].mover();
-      }
+      capa = 2;
     }
+    if (capa == 2) {
+      for (let i = 0; i < 30; i++) {
+      if (diryvel.direcciony() >= 1) {
+        c[i].color1();
+        c[i].mover();
+      } 
+    }
+  }
     if (c[0].posy >= 0) {
+      capa = 3;
+    }
+     if (capa == 3) {
       for (let i = 0; i < 20; i++) {
-        m3[i].primeracapa();
+      if (diryvel.direcciony() >= 1) {
+        m3[i].marron1();
+        m3[i].mover();
+      } else if (diryvel.direcciony() <= -1) {
+        m3[i].marron2();
         m3[i].mover();
       }
     }
+  }
     if (m3[0].posy >= 0) {
+      capa = 4;
+    }
+     if (capa == 4) {
       for (let i = 0; i < 20; i++) {
-        m4[i].primeracapa();
+      if (diryvel.direcciony() >= 1) {
+        m4[i].marron1();
+        m4[i].mover();
+      } else if (diryvel.direcciony() <= -1) {
+        m4[i].marron2();
         m4[i].mover();
       }
     }
+  }
     if (m4[0].posy >= 0) {
-      cuadrados.dibujar();
-    }*/
+      capa = 5;
+    }
+    if (capa == 5) {
+    cuadrados.dibujar();
+    }
   }
 }
