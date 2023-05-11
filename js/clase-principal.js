@@ -28,6 +28,7 @@ class Principal {
     diryvel.calcular(mouseX, mouseY);
 
     console.log(diryvel.direcciony());
+    console.log(capa);
 
     if (diryvel.direcciony() <= 0) {
       console.log("Estoy subiendo");
@@ -36,11 +37,11 @@ class Principal {
     }
 
     if (capa == 0) {
-      if (diryvel.direccionx() <= -10) {
+      if (diryvel.direccionx() <= -1) {
         for (let i = 0; i < 20; i++) {
           m[i].marron1();
         }
-      } else if (diryvel.direccionx() >= 10) {
+      } else if (diryvel.direccionx() >= 1) {
         for (let i = 0; i < 20; i++) {
           m[i].marron2();
         }
@@ -51,12 +52,12 @@ class Principal {
         }
       }
       capa = 1;
-    } else if (capa == 1 && m[0].posy >= 0) {
+    } else if (capa == 1 && m[0].posy >= -1) {
       if (diryvel.direccionx() <= -10) {
         for (let i = 0; i < 20; i++) {
           m2[i].marron1();
         }
-      } else if (diryvel.direccionx() >= 10) {
+      } else if (diryvel.direccionx() >= 1) {
         for (let i = 0; i < 20; i++) {
           m2[i].marron2();
         }
@@ -67,17 +68,18 @@ class Principal {
         }
       }
       capa = 2;
-    } else if (capa == 2 && m2[0].posy >= 0) {
+    } else if (capa == 2 && m2[0].posy >= -1) {
       if (diryvel.direccionx() <= -10) {
         for (let i = 0; i < 30; i++) {
           c[i].dibujar();
         }
       } 
-      if (diryvel.direcciony() <= 0) {
+      if (diryvel.direcciony() <= 1) {
         for (let i = 0; i < 30; i++) {
           c[i].mover();
         }
       }
+      capa = 3;
     }
 
     /*if (m[0].posy >= 0) {
