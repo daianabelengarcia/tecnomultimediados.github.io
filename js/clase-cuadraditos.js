@@ -16,7 +16,7 @@ class Cuadrados {
       movimiento=0;
       }
 
-    if(mouseX>= 200){ // Condicion de ubicaion del mouse que controla el movimiento
+    if(mouseX<= 200){ // Condicion de ubicaion del mouse que controla el movimiento
       cantidadDeColumnas= 300;
       cantidadDeFilas=100;
     }
