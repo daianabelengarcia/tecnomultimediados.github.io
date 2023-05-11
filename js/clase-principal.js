@@ -30,10 +30,10 @@ class Principal {
     console.log(capa);
     
     for (let i = 0; i < 20; i++) {
-      if (diryvel.direccionx() <= 0 && diryvel.direcciony() <= 0) {
+      if (diryvel.direcciony() >= 0) {
         m[i].marron1();
         m[i].mover();
-      } else if (diryvel.direccionx() >= 5 && diryvel.direcciony() <= 0) {
+      } else if (diryvel.direcciony() <= 5) {
         m[i].marron2();
         m[i].mover();
       }
@@ -41,6 +41,20 @@ class Principal {
     if (m[0].posy >= 0) {
       capa = 1;
     }
+    if (capa == 1) {
+      for (let i = 0; i < 20; i++) {
+      if (diryvel.direcciony() >= 0) {
+        m2[i].marron1();
+        m2[i].mover();
+      } else if (diryvel.direcciony() <= 5) {
+        m2[i].marron2();
+        m2[i].mover();
+      }
+    }
+    if (m[0].posy >= 0) {
+      capa = 2;
+    }
+      
 
     /*if (capa == 1 && m[0].posy >= -1) {
       if (diryvel.direccionx() <= -10) {
