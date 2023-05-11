@@ -8,20 +8,19 @@ class Marron {
     this.saturacion = random(0, 100);
   }
 
-
-  marron1 (){
-      noStroke();
-      colorMode(HSB);
-      fill(10, this.brillo, this.saturacion);
-      rect(this.posx, this.posy, this.tamx, this.tamy);
-  }
-  marron2() {
+  dibujar() {
     noStroke();
-    colorMode(HSB);
-    fill (30,this.brillo, this.saturacion);
     rect(this.posx, this.posy, this.tamx, this.tamy);
   }
-  mover () {
+  marron1() {
+    colorMode(HSB);
+    fill(10, this.brillo, this.saturacion);
+  }
+  marron2() {
+    colorMode(HSB);
+    fill(30, this.brillo, this.saturacion);
+  }
+  mover() {
     if (this.posy <= 0) {
       this.posy += 10;
     }

@@ -36,17 +36,18 @@ class Principal {
       console.log("Estoy bajando");
     }
 
-      if (diryvel.direccionx() <= -1) {
+      if (diryvel.direccionx() <= -5) {
         for (let i = 0; i < 20; i++) {
           m[i].marron1();
         }
-      } else if (diryvel.direccionx() >= 1) {
+      } else if (diryvel.direccionx() >= 5) {
         for (let i = 0; i < 20; i++) {
           m[i].marron2();
         }
       }
       if (diryvel.direcciony() <= 0) {
         for (let i = 0; i < 20; i++) {
+          m[i].dibujar();
           m[i].mover();
         }
       }
