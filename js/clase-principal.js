@@ -51,9 +51,11 @@ class Principal {
         m2[i].mover();
       }
     }
+  }
     if (m[0].posy >= 0) {
       capa = 2;
     }
+  
       
 
     /*if (capa == 1 && m[0].posy >= -1) {
