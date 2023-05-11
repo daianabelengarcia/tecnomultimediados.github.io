@@ -35,6 +35,7 @@ class Principal {
       } else if (diryvel.direccionx() >= 1) {
         m[i].marron2();
       }
+      }
     if (diryvel.direcciony() >= 0) {
       for (let i = 0; i < 20; i++) {
         m[i].dibujar();
