@@ -25,7 +25,7 @@ class Cuadrados {
     for(let i = 0; i<candtidadDeColumnas; i+=1){ //dibuja filas y columnas
       for(let e= 0; e<cantidadDeFilas; e+=2){ 
         let posX= i*20 + movimiento; // movieminto en x 
-        let posY= e*20;
+        let posY= e;
         rect(posX, posY, 10, 20);
       }
     }
