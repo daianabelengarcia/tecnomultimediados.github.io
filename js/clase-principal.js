@@ -29,13 +29,17 @@ class Principal {
 
     console.log(capa);
 
-      for (let i = 0; i < 20; i++) {
-      if (diryvel.direccionx() <= -1) {
+      
+      if (diryvel.direccionx() <= -2) {
+        for (let i = 0; i < 20; i++) {
         m[i].marron1();
-      } else if (diryvel.direccionx() >= 1) {
+      } 
+      } else if (diryvel.direccionx() >= 2) {
+        for (let i = 0; i < 20; i++) {
         m[i].marron2();
+        }
       }
-      }
+ 
     if (diryvel.direcciony() >= 0) {
       for (let i = 0; i < 20; i++) {
         m[i].dibujar();
