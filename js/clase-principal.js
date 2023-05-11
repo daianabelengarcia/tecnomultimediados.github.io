@@ -27,14 +27,7 @@ class Principal {
   dibujar(posx, posy) {
     diryvel.calcular(mouseX, mouseY);
 
-    console.log(diryvel.direcciony());
     console.log(capa);
-
-    if (diryvel.direcciony() <= 0) {
-      console.log("Estoy subiendo");
-    } else if (diryvel.direcciony() >= 0) {
-      console.log("Estoy bajando");
-    }
 
       if (diryvel.direccionx() <= -5) {
         for (let i = 0; i < 20; i++) {
@@ -52,7 +45,7 @@ class Principal {
         }
       }
       capa = 1;
-    if (capa == 1 && m[0].posy >= -1) {
+   /* if (capa == 1 && m[0].posy >= -1) {
       if (diryvel.direccionx() <= -10) {
         for (let i = 0; i < 20; i++) {
           m2[i].marron1();
@@ -80,7 +73,7 @@ class Principal {
         }
       }
       capa = 3;
-    }
+    }*/
 
     /*if (m[0].posy >= 0) {
       for (let i = 0; i < 20; i++) {
