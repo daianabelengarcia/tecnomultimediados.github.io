@@ -22,6 +22,7 @@ class Marron {
   }
 
   mover() {
+    fill(10, this.brillo, this.saturacion);
     if (this.posy <= 0) {
       this.posy += 10;
     }
