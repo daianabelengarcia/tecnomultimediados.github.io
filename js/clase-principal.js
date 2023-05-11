@@ -36,7 +36,6 @@ class Principal {
       console.log("Estoy bajando");
     }
 
-    if (capa == 0) {
       if (diryvel.direccionx() <= -1) {
         for (let i = 0; i < 20; i++) {
           m[i].marron1();
@@ -52,7 +51,7 @@ class Principal {
         }
       }
       capa = 1;
-    } else if (capa == 1 && m[0].posy >= -1) {
+    if (capa == 1 && m[0].posy >= -1) {
       if (diryvel.direccionx() <= -10) {
         for (let i = 0; i < 20; i++) {
           m2[i].marron1();
