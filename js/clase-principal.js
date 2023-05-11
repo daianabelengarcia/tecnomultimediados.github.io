@@ -34,7 +34,7 @@ class Principal {
         m[i].marron1();
       } else if (diryvel.direcciony() <= -5) {
         m[i].marron2();
-      } else if (diryvel.direciony() <= 5 && diryvel.direcciony() >= -5) {
+      } else if (diryvel.direcciony() <= 5 && diryvel.direcciony() >= -5) {
         m[i].mover();
       }
     }
