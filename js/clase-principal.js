@@ -61,7 +61,7 @@ class Principal {
     }
     if (capa == 2) {
       for (let i = 0; i < 30; i++) {
-      if (diryvel.direccionx() >= 1 || diryvel.direccionx() <= -1) {
+      if (diryvel.direcciony() >= 1) {
         c[i].dibujar();
         c[i].mover();
       }
