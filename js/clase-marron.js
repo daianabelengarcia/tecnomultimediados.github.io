@@ -17,7 +17,7 @@ class Marron {
   marron2() {
     noStroke();
     colorMode(HSB);
-    fill(30, this.brillo, this.saturacion);
+    fill(20, this.brillo, this.saturacion);
     rect(this.posx, this.posy, this.tamx, this.tamy);
   }
 
