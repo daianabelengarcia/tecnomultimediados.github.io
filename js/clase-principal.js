@@ -6,6 +6,7 @@ let c = [];
 let cuadrados;
 let diryvel;
 let capa;
+let cambiaColor;
 
 class Principal {
   constructor() {
@@ -23,10 +24,13 @@ class Principal {
     cuadrados = new Cuadrados();
 
     capa = 0;
+    
+    cambiaColor = true;
   }
   dibujar(posx, posy) {
+    if (cambiaColor == true) {
     diryvel.calcular(mouseX, mouseY);
-
+    } 
     console.log(capa);
     
    for (let i = 0; i < 20; i++) {
@@ -92,6 +96,7 @@ class Principal {
     }
   }
     if (m4[0].posy >= 0) {
+      cambiaColor = false;
       capa = 5;
     }
     if (capa == 5) {
