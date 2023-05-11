@@ -8,7 +8,7 @@ class Cuadrados {
   dibujar() {
     noStroke();
     fill(255);
-    let candtidadDeColumnas = mouseY/20;
+    let candtidadDeColumnas = 200;
     let cantidadDeFilas = 200;
     let movimiento = frameCount % 20;
     
