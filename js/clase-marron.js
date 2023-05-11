@@ -9,13 +9,13 @@ class Marron {
   }
 
 
-  primeracapa (){
+  marron1 (){
       noStroke();
       colorMode(HSB);
       fill(10, this.brillo, this.saturacion);
       rect(this.posx, this.posy, this.tamx, this.tamy);
   }
-  segundacapa() {
+  marron2() {
     noStroke();
     colorMode(HSB);
     fill (30,this.brillo, this.saturacion);

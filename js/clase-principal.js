@@ -5,6 +5,7 @@ let m4 = [];
 let c = [];
 let cuadrados;
 let diryvel;
+let capa;
 
 class Principal {
   constructor() {
@@ -20,29 +21,64 @@ class Principal {
       c.push(new Colores());
     }
     cuadrados = new Cuadrados();
+
+    capa = 0;
   }
-  dibujar(posX, posY) {
-    diryvel.calcular(posX, posY);
+  dibujar(posx, posy) {
+    diryvel.calcular(mouseX, mouseY);
 
     console.log(diryvel.direcciony());
 
     if (diryvel.direcciony() <= 0) {
       console.log("Estoy subiendo");
     } else if (diryvel.direcciony() >= 0) {
-        console.log ("Estoy bajando");
+      console.log("Estoy bajando");
     }
 
-    if (diryvel.direcciony() <= -5) {
-      for (let i = 0; i < 20; i++) {
-        m[i].primeracapa();
-        m[i].mover();
-      } } else if (diryvel.direcciony() >= 5) {
-      for (let i = 0; i < 20; i++) {
-        m[i].segundacapa();
-        m[i].mover();
+    if (capa == 0) {
+      if (diryvel.direccionx() <= -10) {
+        for (let i = 0; i < 20; i++) {
+          m[i].marron1();
+        }
+      } else if (diryvel.direccionx() >= 10) {
+        for (let i = 0; i < 20; i++) {
+          m[i].marron2();
+        }
+      }
+      if (diryvel.direcciony() <= 0) {
+        for (let i = 0; i < 20; i++) {
+          m[i].mover();
+        }
+      }
+      capa = 1;
+    } else if (capa == 1 && m[0].posy >= 0) {
+      if (diryvel.direccionx() <= -10) {
+        for (let i = 0; i < 20; i++) {
+          m2[i].marron1();
+        }
+      } else if (diryvel.direccionx() >= 10) {
+        for (let i = 0; i < 20; i++) {
+          m2[i].marron2();
+        }
+      }
+      if (diryvel.direcciony() <= 0) {
+        for (let i = 0; i < 20; i++) {
+          m2[i].mover();
+        }
+      }
+      capa = 2;
+    } else if (capa == 2 && m2[0].posy >= 0) {
+      if (diryvel.direccionx() <= -10) {
+        for (let i = 0; i < 30; i++) {
+          c[i].dibujar();
+        }
+      } 
+      if (diryvel.direcciony() <= 0) {
+        for (let i = 0; i < 30; i++) {
+          c[i].mover();
+        }
       }
     }
-    
 
     /*if (m[0].posy >= 0) {
       for (let i = 0; i < 20; i++) {
