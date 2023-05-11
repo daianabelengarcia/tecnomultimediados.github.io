@@ -16,7 +16,7 @@ class Colores {
     }
     mover () {
 if (this.posy <= 0) {
-    this.posy +=10;
+    this.posy +=2;
     }
   }
 }
