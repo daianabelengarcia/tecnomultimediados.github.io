@@ -18,9 +18,7 @@ class Cuadrados {
       cantidadDeFilas=100;
       }
 
-    if(mouseX<= 200){ // Condicion de ubicaion del mouse que controla el movimiento
-      
-    }
+ 
 
     for(let i = 0; i<candtidadDeColumnas; i+=1){ //dibuja filas y columnas
       for(let e= 0; e<cantidadDeFilas; e+=2){ 
