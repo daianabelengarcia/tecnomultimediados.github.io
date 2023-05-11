@@ -61,10 +61,10 @@ class Principal {
     }
     if (capa == 2) {
       for (let i = 0; i < 30; i++) {
-      if (diryvel.direcciony() >= 1) {
+      if (diryvel.direccionx() >= 1 || diryvel.direccionx() <= -1) {
         c[i].dibujar();
         c[i].mover();
-      } 
+      }
     }
   }
     if (c[0].posy >= 0) {
