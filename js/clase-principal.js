@@ -38,7 +38,7 @@ class Principal {
     }
     if (diryvel.direcciony() <= 0) {
       for (let i = 0; i < 20; i++) {
-        m[i].mover();
+        m[i].dibujarymover();
       }
     }
     if (m[0].posy >= 0) {

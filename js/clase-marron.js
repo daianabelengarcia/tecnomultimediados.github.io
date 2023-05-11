@@ -12,15 +12,15 @@ class Marron {
     noStroke();
     colorMode(HSB);
     fill(10, this.brillo, this.saturacion);
-    rect(this.posx, this.posy, this.tamx, this.tamy);
   }
   marron2() {
     noStroke();
     colorMode(HSB);
     fill(30, this.brillo, this.saturacion);
-    rect(this.posx, this.posy, this.tamx, this.tamy);
   }
-  mover() {
+  
+  dibujarymover() {
+    rect(this.posx, this.posy, this.tamx, this.tamy);
     if (this.posy <= 0) {
       this.posy += 10;
     }
