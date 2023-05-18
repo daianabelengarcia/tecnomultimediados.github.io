@@ -103,4 +103,14 @@ class Principal {
     cuadrados.dibujar();
     }
   }
+
+  reiniciar(){
+    // fill(255);
+    // rect(0, 0, width, height);
+    capa = 0;
+    m[0].posx = random(width);
+    m[0].posy = -600;
+   
+
+  }
 }

@@ -1,7 +1,7 @@
 class Marron {
   constructor() {
     this.posx = random(width);
-    this.posy = -600;
+    this.posy = random (-600, -900);
     this.tamx = 20;
     this.tamy = 600;
     this.brillo = random(0, 100);
@@ -23,7 +23,7 @@ class Marron {
 
   mover() {
     if (this.posy <= 0) {
-      this.posy += 2;
+      this.posy += random (1, 6);
     }
   }
 }

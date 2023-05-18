@@ -10,3 +10,8 @@ function draw() {
 function mouseMoved() {
   obra.dibujar(mouseX, mouseY);
 }
+function keyPressed(){
+  if (keyCode === ENTER){
+    obra.reiniciar();
+  }
+}
