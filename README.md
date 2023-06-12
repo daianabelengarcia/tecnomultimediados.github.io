@@ -1,1 +1,0 @@
-# tecnomultimediados.github.io
