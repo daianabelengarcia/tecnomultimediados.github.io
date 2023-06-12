@@ -22,7 +22,7 @@ let capa;
 let fondo;
 let imagen;
 let grafico;
-let numero;
+
 
 
 
