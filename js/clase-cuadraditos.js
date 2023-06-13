@@ -1,7 +1,7 @@
 class Cuadrados {
   constructor() {
-    this.img1 = loadImage('../img/cuadrado-1.png');
-    this.img2 = loadImage('../img/cuadrado-1.png');
+    this.img1 = loadImage("../img/cuadrado-1.png");
+    this.img2 = loadImage("../img/cuadrado-1.png");
     this.posx1 = 0;
     this.posx2 = width;
   }
