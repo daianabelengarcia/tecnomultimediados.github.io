@@ -50,7 +50,7 @@ function setup() {
 }
 
 function preload(){
-  imagen = loadImage('img/obra.jpg');
+  imagen = loadImage('../img/obra.jpg');
 }
 
 function draw() {
